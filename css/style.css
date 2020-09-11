@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-weight: 700;
+font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-weight: 700;
+*/
+
+/* CONTENTS /\/\/\/\/\/\/\/\/\/\/\/\/\
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+}
+
+html, p, li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: inside;
+}
+
+hr.horizontal-rule {
+    border-top: 1px solid #D8D8D8;
+    margin: 2em 0 3em 0;
+}
+
+a {
+    color: cornflowerblue
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+/* - - Text - -  */
+
+strong { 
+    font-weight: 700;
+}
+
+.category-title-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.4rem;
+    margin: 0 0 1em 0;
+}
+
+.category-lead-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    margin: 0 0 1em 0;
+}
+
+.keyword-text li {
+    font-size: .80rem;
+    display: inline-block;
+    margin: 0 0 2em 0;
+}
+
+.author-name-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.date-reviewed-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 0 0 1em 0;
+}
+
+.subhead-text-lg {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    margin: 0 0 1em 0;
+}
+
+.subhead-text-md {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* - - Buttons - - */
+
+.btn {
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    margin: 3em 0 0 0;
+}
+
+.btn-primary {
+    background: cornflowerblue;
+    color: #fff;
+    width: 160px;
+    height: 44px;
+    border-radius: 3px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.contain {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* featured-category-items */
+.featured-category-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.view-more {
+    margin: 4em 0 4em 0;
+    text-align: right;
+}
+
+/* featured-card-column */
+.featured-card-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1em
+}
+
+/* random-category-items */
+.random-thumbnail-items {
+    display: flex;
+    flex-direction: row;
+}
+
+/* random-card-column */
+.random-card-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1em
+}
+
+.random-card-column img { 
+    margin: 0 0 1em 0;
+}
+
