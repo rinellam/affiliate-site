@@ -9,6 +9,11 @@ font-family: 'Roboto Slab', serif;
     font-weight: 700;
 */
 
+/* COLORS /\/\/\/\/\/\/\/\/\/\/\/\/\
+color: #1dcd99; greenish
+color: #375cd8; blueish
+*/
+
 /* CONTENTS /\/\/\/\/\/\/\/\/\/\/\/\/\
 */
 
@@ -43,18 +48,36 @@ li {
 
 hr.horizontal-rule {
     border-top: 1px solid #D8D8D8;
-    margin: 2em 0 3em 0;
+    margin: 4em 0 4em 0;
 }
 
 a {
-    color: cornflowerblue
+    color: #375cd8;
 }
 
 a:hover {
-    color: dodgerblue;
+    color: #536eee;
 }
 
-/* - - Text - -  */
+/* chevron-up - - - - - - - - - - */
+
+.back-to-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 100%;
+    margin: 4em 0 4em 0;
+}
+
+.fa-chevron-up {
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #375cd8;
+    padding: 10px 12px;
+    border-radius: 26px;
+}
+
+/* text  - - - - - - - - - - */
 
 strong { 
     font-weight: 700;
@@ -64,12 +87,32 @@ strong {
     font-family: 'Roboto Slab', serif;
     font-size: 2.4rem;
     margin: 0 0 1em 0;
+    line-height: 1.2;
 }
 
 .category-lead-text {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     margin: 0 0 1em 0;
+    line-height: 1.2;
+}
+
+.subhead-text-lg {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    margin: 0 0 1em 0;
+    line-height: 1.2;
+}
+
+.subhead-text-md {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.affiliate-message-text {
+    margin: 4em 0 4em 0;
+    text-align: center;
 }
 
 .keyword-text li {
@@ -89,18 +132,7 @@ strong {
     margin: 0 0 1em 0;
 }
 
-.subhead-text-lg {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    margin: 0 0 1em 0;
-}
-
-.subhead-text-md {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-}
-
-/* - - Buttons - - */
+/* buttons - - - - - - - - - - */
 
 .btn {
     font-size: 1rem;
@@ -112,7 +144,7 @@ strong {
 }
 
 .btn-primary {
-    background: cornflowerblue;
+    background:#375cd8;
     color: #fff;
     width: 160px;
     height: 44px;
@@ -121,19 +153,53 @@ strong {
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: dodgerblue;
+    background-color: #536eee;
     color: #fff;
 }
 
 .contain {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
-/* featured-category-items */
+/* HEADER - - - - - - - - - - */
+header {
+    background: royalblue;
+}
+
+
+/* NAV - - - - - - - - - - */
+
+nav {
+    background: #375cd8;
+}
+
+.nav-text-item {
+    padding: 1em 0 1em 0;
+    text-align: center;
+}
+
+.nav-text-item li {
+    display: inline-block;
+    padding: 0 .5em 0 .5em;
+}
+
+.nav-text-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-text-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* featured-category-items - - - - - - - - - - */
+
 .featured-category-items {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .view-more {
@@ -141,31 +207,133 @@ strong {
     text-align: right;
 }
 
-/* featured-card-column */
+/* featured-card-column - - - - - - - - - - */
+
 .featured-card-column {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 1em
+    width: 30%;
 }
 
-/* random-category-items */
+/* random-category-items - - - - - - - - - - */
+
 .random-thumbnail-items {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-/* random-card-column */
+/* random-card-column - - - - - - - - - - */
+
 .random-card-column {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 1em
+    width: 15%;
 }
 
 .random-card-column img { 
     margin: 0 0 1em 0;
 }
 
+/* season-featured-item - - - - - - - - - - */
+
+.season-featured-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.season-card-column-one {
+    width: 10%;
+}
+
+.season-card-column-two {
+    width: 10%;
+}
+
+.season-card-column-three {
+    width: 65%;
+}
+
+
+/* google-ad-card - - - - - - - - - - */
+
+.google-ad-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  
+}
+
+.google-ad-img {
+    width: 728px;
+    height: 90px;
+}
+
+
+/* FOOTER - - - - - - - - - - */
+
+footer {
+    background: #1a1a1a;
+    padding: 4em 0 4em 0;
+    
+}
+
+.footer-contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.footer-card-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.align-right {
+    text-align: right;
+}
+
+footer .card-body-text li {
+    color: #ffffff;
+    list-style: none;
+}
+
+footer .card-body-text li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .card-body-text li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer .card-body-text {
+    color: #ffffff;
+}
+
+.footer-custom-margin {
+    margin: 0 0 2em 0;
+}
+
+.logo-text-footer {
+    color:	#707070;
+}
+
+.fab {
+    font-size: 3rem;
+    color: #ffffff;
+    padding: .25em .5em 0 0;
+}
