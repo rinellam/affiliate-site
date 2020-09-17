@@ -6,18 +6,34 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>CRN: Product Reviews, Buyer Guides and Recommendations</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
         <link rel="stylesheet" href="/css/style.css">
+        <script
+			  src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			  crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="contain">
 
+        <header class="contain header-card">
+            <div class="logo-card">
+                <div class="logo-text-abbr-header">CRN</div>
+                <div class="logo-text-full-header"><p>Consumer Reviews Network</p></div>
+            </div>
+            <div class="search-form">
+                <!-- The search form -->
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Search CRN..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </header>
 
-        <nav>
+        <!--
+        <nav class="main-navigation" role="navigation">
             <div class="nav-text">
                 <div class="nav-text-item">
                     <ul>
@@ -27,16 +43,39 @@
                         <li><a href="#">Bathroom</a></li>
                         <li><a href="#">Travel</a></li>
                         <li><a href="#">Gifts</a></li>
-                        <li><a href="#">More</a></li>
+                        <li><a href="#">More</a></li>      
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>-->
+
+        <nav role="navigation">
+            <ul>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Home & Garden</a></li>
+                <li><a href="#">Kitchen & Dining</a></li>
+                <li><a href="#">Bathroom</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Gifts</a></li>
+                <li><a href="#" aria-haspopup="true">More...</a>
+                    <ul class="dropdown" aria-label="submenu">
+                        <li><a href="#">Money</a></li>
+                        <li><a href="#">Appliances</a></li>
+                        <li><a href="#">Health & Fitness</a></li>
+                        <li><a href="#">Baby & Kids</a></li>
+                        <li><a href="#">Outdoors</a></li>
+                        <li><a href="#">Hobbies & Crafts</a></li>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">Office</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>  
 
         <main class="contain">
 
         <!-- Affiliate Message: Start -->  
-        <section class="affiliate-message-text"><div class="card-body-text"><p>Our site is reader-supported. When you buy through links on our site, we may earn an affiliate commission. <a href="#">Learn more.</a></p></section>
+        <section class="affiliate-message-text"><div class="card-body-text"><p>Our site is reader-supported. When you purchase products through links on our site, we may earn an affiliate commission. <a href="#">Learn more.</a></p></section>
         <!-- Affiliate Message: End -->  
 
             <!-- Season Feature Item: Start -->    
@@ -192,15 +231,16 @@
             <section class="google-ad-card">
                 <img class="google-ad-img" src="img/fpo-img-920x500px.png">
             </section>
-
+            <!--
             <section class="back-to-top chevron-background"><a href="#"><i class="fas fa-chevron-up"></i></a></section>
+            -->
 
         </main>
         
         <footer>
             <section class="footer-contain">
                 <div class="footer-card-column">
-                    <div class="card-body-text footer-custom-margin">
+                    <div class="card-body-text">
                         <ul>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Contact Us</a></li>
@@ -208,14 +248,14 @@
                             <li><a href="#">Affiliate Information</a></li>
                         </ul>
                     </div>
-                    
-                    <div class="social-media-icons footer-custom-margin">
+                    <hr class="horizontal-rule">
+                    <div class="social-media-icons">
                         <p class="card-body-text"><strong>Connect With Us:</strong></p>
                         <i class="fab fa-instagram fa-fw"></i>
                         <i class="fab fa-facebook fa-fw"></i>
                     </div>
-
-                    <div class="logo-text-footer footer-custom-margin">Consumer Reviews Network © 2020</div>
+                    <hr class="horizontal-rule">
+                    <div class="logo-text-footer">Consumer Reviews Network © 2020</div>
                 </div>
 
                 <div class="footer-card-column align-right">
@@ -241,7 +281,7 @@
 
             </section>
         </footer>
-        
+
         <script src="" async defer></script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Roboto:ital,wght@0,400;0,700;1,400&family=Shrikhand&display=swap');
 /*
 font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -7,6 +7,8 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif;
     font-weight: 500;
     font-weight: 700;
+font-family: 'Shrikhand', cursive;
+    font-weight: 400;
 */
 
 /* COLORS /\/\/\/\/\/\/\/\/\/\/\/\/\
@@ -51,23 +53,28 @@ hr.horizontal-rule {
     margin: 4em 0 4em 0;
 }
 
+footer hr.horizontal-rule {
+    border-top: 1px solid #D8D8D8;
+    margin: 2em 0 2em 0;
+}
+
 a {
     color: #375cd8;
 }
 
 a:hover {
-    color: #536eee;
+    color: #0443e5;
 }
 
 /* chevron-up - - - - - - - - - - */
-
+/*
 .back-to-top {
     display: flex;
     flex-direction: row;
     justify-content: right;
     width: 100%;
     margin: 4em 0 4em 0;
-}
+}*/
 
 .fa-chevron-up {
     font-size: 2rem;
@@ -111,7 +118,7 @@ strong {
 }
 
 .affiliate-message-text {
-    margin: 4em 0 4em 0;
+    margin: 1em 0 4em 0;
     text-align: center;
 }
 
@@ -153,7 +160,7 @@ strong {
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #536eee;
+    background-color: #0443e5;
     color: #fff;
 }
 
@@ -164,34 +171,165 @@ strong {
 
 /* HEADER - - - - - - - - - - */
 header {
-    background: royalblue;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0 2em 0;
 }
+
+.logo-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-text-abbr-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Shrikhand', cursive;
+    font-size: 4rem;
+    color: #1dcd99; 
+}
+
+.logo-text-full-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 0 0 1em;
+
+
+}
+
+.logo-text-full-header p {
+    font-size: .9rem;
+    line-height: 1;
+}
+
+/* Search Form - - - - - - - - - */
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 1.25rem;
+    border: 1px solid #dbdbdb;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+
+    width: 20%;
+    padding: 10px;
+    background: #375cd8;
+    color: white;
+    font-size: 1.25rem;
+    border: 1px solid #d8d8d8;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0443e5;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 
 /* NAV - - - - - - - - - - */
 
 nav {
     background: #375cd8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.nav-text-item {
-    padding: 1em 0 1em 0;
-    text-align: center;
-}
-
-.nav-text-item li {
-    display: inline-block;
-    padding: 0 .5em 0 .5em;
-}
-
-.nav-text-item a {
-    color: #ffffff;
+nav a {
     text-decoration: none;
 }
 
-.nav-text-item a:hover {
-    text-decoration: underline;
+
+nav ul {
+    background: #375cd8;
+    list-style: none;
 }
+
+nav li {
+    color: #fff;
+    background: #375cd8;
+    display: inline-block;
+    text-align: center;
+    min-width: 9rem;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav li a {
+    color: #fff;
+}
+
+nav li a:hover {
+    color: #ffffff;
+}
+
+
+nav li:hover,
+nav li:focus-within {
+    background: #0443e5;
+    cursor: pointer;
+}
+
+nav li:focus-within a {
+    outline: none;
+}
+
+nav ul li ul {
+    background: #375cd8;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 9rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+nav ul li:hover > ul,
+nav ul li:focus-within > ul,
+nav ul li ul:hover,
+nav ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+
+
+
 
 
 /* featured-category-items - - - - - - - - - - */
@@ -284,6 +422,7 @@ nav {
 footer {
     background: #1a1a1a;
     padding: 4em 0 4em 0;
+    margin: 4em 0 0 0;
     
 }
 
