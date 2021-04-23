@@ -98,11 +98,11 @@ footer hr.horizontal-rule {
 }
 
 a {
-    color: #3077ae;
+    color: #48a5b4;
 }
 
 a:hover {
-    color: #133b6d;
+    color: #225158
 }
 
 /* chevron-up - - - - - - -  */
@@ -197,8 +197,8 @@ strong {
 }
 
 .btn-primary {
-    background: #3077ae;
-    color: #fff;
+    background: #48a5b4;
+    color: #ffffff;
     width: 10em; /* 160px */
     height: 3em; /* 44px */
     border-radius: 3px;
@@ -206,7 +206,7 @@ strong {
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background: #133b6d;
+    background: #2d6871;
     color: #ffffff;
     text-decoration: underline;
 }
@@ -239,7 +239,7 @@ header {
     align-items: center;
     font-family: 'Shrikhand', cursive;
     font-size: 4rem;
-    color: #f7ca5c;
+    color: #ef7940;
     text-decoration: none;
 }
 
@@ -257,7 +257,7 @@ header {
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
-    color: #707070;
+    color: #225158;
 
 }
 
@@ -285,7 +285,7 @@ form#search-desktop button {
 
     width: 20%;
     padding: 10px;
-    background: #3077ae;
+    background:#48a5b4;
     color: white;
     font-size: 1.25rem;
     border: 1px solid #d8d8d8;
@@ -297,7 +297,7 @@ form#search-desktop button {
   
   /* Style the hover on submit button */
 form#search-desktop button:hover {
-    background: #133b6d;
+    background: #225158;
   }
   
   /* Clear floats */
@@ -322,14 +322,14 @@ form#search-mobile {
 }
 
 nav {
-    background: #3077ae;
+    background: #48a5b4;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .active {
-    background: #133b6d;
+    background: #2d6871;
     text-decoration: underline;
 }
 
@@ -339,13 +339,13 @@ nav a {
 
 
 nav ul {
-    background: #3077ae;
+    background: #48a5b4;
     list-style: none;
 }
 
 nav li {
     color: #fff;
-    background: #3077ae;
+    background: #48a5b4;
     display: inline-block;
     text-align: center;
     min-width: 7rem;
@@ -356,7 +356,7 @@ nav li {
 }
 
 nav li a {
-    color: #fff;
+    color: #ffffff;
 }
 
 nav li a:hover {
@@ -367,7 +367,7 @@ nav li a:hover {
 
 nav li:hover,
 nav li:focus-within {
-    background: #133b6d;
+    background: #225158;
     cursor: pointer;
 }
 
@@ -376,7 +376,7 @@ nav li:focus-within a {
 }
 
 nav ul li ul {
-    background: #3077ae;
+    background: #48a5b4;
     visibility: hidden;
     opacity: 0;
     min-width: 7rem;
@@ -596,22 +596,22 @@ footer {
 }
 
 footer .card-body-text li {
-    color: #3077ae;
+    color: #48a5b4;
     list-style: none;
 }
 
 footer .card-body-text li a {
-    color: #3077ae;
+    color: #48a5b4;
     text-decoration: none;
 }
 
 footer .card-body-text li a:hover {
-    color: #133b6d;
+    color: #225158;
     text-decoration: underline;
 }
 
 footer .card-body-text {
-    color: #3077ae;
+    color: #48a5b4;
 }
 
 .footer-custom-margin {
@@ -635,12 +635,12 @@ footer .card-body-text {
 
 .fab {
     font-size: 3rem;
-    color: #3077ae;
+    color: #48a5b4;
     padding: .25em .5em 0 0;
 }
 
 .fab:hover {
-    color: #133b6d;
+    color: #2d6871;
 }
 
 
@@ -695,7 +695,7 @@ footer .card-body-text {
     form#search-mobile button {
         width: 20%;
         padding: 10px;
-        background: #3077ae;
+        background: #48a5b4;
         color: white;
         font-size: 1.25rem;
         border: 1px solid #d8d8d8;
@@ -707,7 +707,7 @@ footer .card-body-text {
   
   /* Style the hover on submit button */
     form#search-mobile button:hover {
-        background: #133b6d;
+        background: #225158;
     }
   
   /* Clear floats */
@@ -815,7 +815,7 @@ footer .card-body-text {
 
     nav li:hover,
     nav li:focus-within {
-        background: #133b6d;
+        background: #225158;
         cursor: pointer;
 }
     
@@ -833,14 +833,13 @@ footer .card-body-text {
     }
     
     .close-nav:hover {
-        color: #ffffff;
-        color: #133b6d;
+        color: #225158;
     }
     
     .open-nav {
         border: 0;
         background: 0;
-        color: #3077ae;
+        color: #48a5b4;
         cursor: pointer;
         padding-right: .25em;
         margin-left: auto;
